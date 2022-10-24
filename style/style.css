@@ -76,8 +76,32 @@ header {
         
     }
 
+    .box-thumbnails{
+        display: flex;
+        justify-content: space-around;
+        padding: 3rem;
+    }
 
+    .itens-thumb{
+        text-align: center;
+    }
 
+    .box-thumbnails div h1{
+        color: #555555;
+        font-family: "Courgette",cursive;
+        font-size: 26px;
+        font-weight: normal;
+        text-transform: none;
+        margin-bottom: 20px;
+
+    }
+
+    .box-thumbnails div img{
+        width: 150px;
+        height: auto;
+        border-radius: 100%;
+
+    }
 
 }
 
@@ -110,11 +134,13 @@ header {
     .box-conteudo{
         display: grid;
         grid-template-columns: auto auto;
-        padding: 3rem 3rem 1rem 3rem;
+        /* padding: 3rem 3rem 1rem 3rem; */
     }
 
     #renato{
-        width: 380px;
+        /* max-width: 380px; */
+        width: calc(100% - 1em);
+
     }
 
     .lorem{
@@ -133,9 +159,35 @@ header {
         background-color: #1c1c1c;
         border: none;
         color: white;
-        margin-left: 400px;
+        margin-top: 20px;
         cursor: pointer;
         
+    }
+
+    .box-thumbnails{
+        display: flex;
+        justify-content: space-around;
+        padding: 3rem;
+    }
+
+    .itens-thumb{
+        text-align: center;
+    }
+
+    .box-thumbnails div h1{
+        color: #555555;
+        font-family: "Courgette",cursive;
+        font-size: 26px;
+        font-weight: normal;
+        text-transform: none;
+
+    }
+
+    .box-thumbnails div img{
+        width: 150px;
+        height: auto;
+        border-radius: 100%;
+
     }
 
 
