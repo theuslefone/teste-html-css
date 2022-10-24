@@ -1,6 +1,6 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -10,10 +10,21 @@ header {
 
 }
 
+.box-santo{
+    display: flex;
+    justify-content: center;
+
+    background-image: url("/img//background.jpg");
+    height: 50vh;
+}
+
+
+
+
 
 @media (min-width: 1080px)
 {
-    .itens{
+    .box-itens{
         display: flex;
         justify-content: space-evenly;
     }
@@ -21,7 +32,7 @@ header {
     .spacer{
         display: none;
     }
-    
+
     #menu-hamburguer{
         display: none;
     }
@@ -29,19 +40,55 @@ header {
     #imagem-menu {
         margin-top: 18px;
         height: 25px;
+    }  
+
+    .box-biografia-artista{
+        background-color: #972b0f;
+        padding: 2rem;
     }
-    
-    #logo-renato {
+
+    .box-conteudo{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 3rem 3rem 1rem 3rem;
     }
+
+    #renato{
+        width: calc(100% - 1em);
+    }
+
+    .lorem{
+        color: white;
+    }
+
+    .box-buttom{
+        display: flex;
+        justify-content: center;
+    }
+
+    #button-bottom{
+        padding: 0.5em 3em 0.5em 3em;
+        background-color: #1c1c1c;
+        border: none;
+        color: white;
+        margin-left: 400px;
+        cursor: pointer;
+        
+    }
+
+
+
+
 }
 
 
 
 @media (max-width: 1079px){
 
-    .itens{
+    .box-itens{
         display: flex;
         justify-content: space-between;
+        
     }
 
     #menu-hamburguer{
@@ -55,7 +102,42 @@ header {
        display: none;
     }
     
-    #logo-renato {
+    .box-biografia-artista{
+        background-color: #972b0f;
+        padding: 3rem;
     }
+
+    .box-conteudo{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 3rem 3rem 1rem 3rem;
+    }
+
+    #renato{
+        width: 380px;
+    }
+
+    .lorem{
+        color: white;
+        max-height: 18rem;
+        overflow-y: scroll;
+    }
+
+    .box-buttom{
+        display: flex;
+        justify-content: center;
+    }
+
+    #button-bottom{
+        padding: 0.5em 3em 0.5em 3em;
+        background-color: #1c1c1c;
+        border: none;
+        color: white;
+        margin-left: 400px;
+        cursor: pointer;
+        
+    }
+
+
 }
 
