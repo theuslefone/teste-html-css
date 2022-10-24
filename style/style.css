@@ -18,12 +18,17 @@ header {
     height: 50vh;
 }
 
+footer{
+    background-image: url('/img/textura-footer.gif');
+}
+
 
 
 
 
 @media (min-width: 1080px)
 {
+    /* Header */
     .box-itens{
         display: flex;
         justify-content: space-evenly;
@@ -42,6 +47,7 @@ header {
         height: 25px;
     }  
 
+    /* Main */
     .box-biografia-artista{
         background-color: #972b0f;
         padding: 2rem;
@@ -50,7 +56,7 @@ header {
     .box-conteudo{
         display: grid;
         grid-template-columns: auto auto;
-        padding: 3rem 3rem 1rem 3rem;
+        padding: 3rem 15rem 1rem 15rem;
     }
 
     #renato{
@@ -103,12 +109,48 @@ header {
 
     }
 
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+    }
+    
+    footer div h1{
+        color: #171717;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 28px;
+        margin-bottom: 18px;
+        text-transform: capitalize;
+
+    }
+
+    footer div{
+        text-align: center;
+    }
+
+    .box-contato ul li{
+        text-align: start;
+        color: #2e2e2e;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .box-contato h1 {
+        text-align: start;
+    }
+
 }
 
 
 
 @media (max-width: 1079px){
 
+    /* Header */
     .box-itens{
         display: flex;
         justify-content: space-between;
@@ -126,6 +168,9 @@ header {
        display: none;
     }
     
+    /* Main */
+
+    /* Area biografia */
     .box-biografia-artista{
         background-color: #972b0f;
         padding: 3rem;
@@ -164,13 +209,14 @@ header {
         
     }
 
+    /* Area cards */
+
     .box-thumbnails{
-        display: flex;
-        justify-content: space-around;
-        padding: 3rem;
+        margin-top: 50px;
     }
 
     .itens-thumb{
+        margin-top: 30px;
         text-align: center;
     }
 
@@ -190,6 +236,35 @@ header {
 
     }
 
+    /* Footer */
+
+    footer div h1{
+        color: #171717;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 28px;
+        margin-bottom: 18px;
+        text-transform: capitalize;
+
+    }
+
+    footer div{
+        text-align: center;
+        margin: 20px;
+        padding-top: 20px;
+    }
+
+    .box-contato ul li{
+        color: #2e2e2e;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .box-mensagem img {
+        width: 90%;
+    }
 
 }
 
